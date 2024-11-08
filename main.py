@@ -1,5 +1,7 @@
 # Set up and run this Streamlit App
-__import__('pysqlite3') import sys sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+__import__('pysqlite3') 
+import sys 
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import streamlit as st
 
 from helper_functions import llm
